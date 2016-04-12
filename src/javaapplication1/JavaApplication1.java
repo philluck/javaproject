@@ -8,8 +8,9 @@ public class JavaApplication1 {
 
     public static void main(String[] args) {
         Comp com = new Comp();
-        com.name ="WS01";
-        com.hdd=250;
+        com.setName("WS01");
+        com.setRam(-2046);
+        com.setHdd(500);
         com.on();
         com.load();
         com.off();

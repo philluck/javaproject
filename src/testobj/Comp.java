@@ -3,13 +3,46 @@ package testobj;
 
 
 public class Comp {
-    public String name;
+    private String name;
     
-    public int ram;
+    private int ram;
     
-    public int hdd;
+    private int hdd;
     
-    public double weight;
+    private double weight;
+    
+    public String getName () {
+        return name;
+    };
+    
+    public void setName (String newName){
+        name = newName;
+    }
+    
+    public int getRam () {
+        return ram;
+    }
+    
+    public void setRam (int newRam){
+        if (newRam>0){
+            ram = newRam;
+        }else{
+            System.out.println("не может быть меньше 0"+newRam);
+        }
+        
+    }
+     public int getHdd () {
+        return hdd;
+    }
+    
+    public void setHdd (int newHdd){
+        if (newHdd>0){
+            hdd = newHdd;
+        }else{
+            System.out.println("не может быть меньше 0"+newHdd);
+        }
+        
+    }
     
     public void on () {
         System.out.println("я включился "+name);
