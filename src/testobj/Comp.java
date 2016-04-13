@@ -11,6 +11,35 @@ public class Comp {
     
     private double weight;
     
+    private String factoryNumber;
+    private int cpuNumber;
+    private int height;
+    private int wigh2t;
+    
+    public int getCpuNumber () {
+        return cpuNumber;
+    }
+    
+    public void setCpuNumber (){
+        this.cpuNumber = cpuNumber;
+    }
+    
+    public int getHeight () {
+        return height;
+    }
+    
+    public void setHeight (){
+        this.height = height;
+    }
+    
+     public int getwigh2t () {
+        return wigh2t;
+    }
+    
+    public void setwigh2t (){
+        this.wigh2t = wigh2t;
+    }
+    
     public String getName () {
         return name;
     };
@@ -31,6 +60,22 @@ public class Comp {
         }
         
     }
+     public String getFactoryNumber () {
+         if (factoryNumber==null || factoryNumber.trim().equals("")){
+             return ("обишка ");
+         }else{
+        return factoryNumber;
+         }
+    }
+    
+    public void setFactoryNumber (String factoryNumber){
+        if (factoryNumber!=null && !factoryNumber.trim().equals("")){
+            this.factoryNumber= factoryNumber;
+         }else{
+            System.out.println("nono");
+        }
+    }
+    
      public int getHdd () {
         return hdd;
     }

@@ -14,6 +14,9 @@ public class JavaApplication1 {
         com.on();
         com.load();
         com.off();
+        com.setFactoryNumber("    sdgf       ");
+        System.out.println(com.getFactoryNumber());
+        
     }
     
 }
